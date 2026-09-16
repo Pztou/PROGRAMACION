@@ -10,14 +10,14 @@ public class main {
 
         int diasAlquiler = 5;
 
-        System.out.println("=== ALQUILER DE VEHÍCULOS ===");
-        System.out.println("Cálculo de alquiler para " + diasAlquiler + " días:\n");
+        System.out.println("=== ALQUILER DE VEHICULOS ===");
+        System.out.println("Calculo de alquiler para " + diasAlquiler + " dias:\n");
 
         for (Vehiculo v : listaVehiculos) {
             double costoTotal = v.calcularCostoAlquiler(diasAlquiler);
-            System.out.println("Vehículo: " + v.getMarca() + " " + v.getModelo() +
-                    "\nTarifa base/día: $" + v.getTarifaBase() +
-                    "\nCosto total (" + diasAlquiler + " días): $" + costoTotal +
+            System.out.println("Vehiculo: " + v.getMarca() + " " + v.getModelo() +
+                    "\nTarifa base/dia: $" + v.getTarifaBase() +
+                    "\nCosto total (" + diasAlquiler + " dias): $" + costoTotal +
                     "\n----------------------------------------");
         }
     }
